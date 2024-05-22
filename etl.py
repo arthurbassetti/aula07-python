@@ -40,8 +40,10 @@ def somar_valor(lista_com_produtos_filtrados: list[dict]) -> int:
     Soma todos os produtos que estão na lista
     """
     valor_total = 0
+
     for produto in lista_com_produtos_filtrados:  
         valor_total += int(produto.get("price"))
+        
     return valor_total
 
 
